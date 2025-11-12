@@ -3,6 +3,7 @@ body {
   color: #fff;
   font-family: 'Inter', sans-serif;
   margin: 0;
+  padding: 0;
 }
 .navbar {
   display: flex;
@@ -28,7 +29,8 @@ body {
 }
 .hero {
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 0;
+  padding: 0;
 }
 .btn {
   background: #00ffff;
@@ -52,4 +54,192 @@ body {
 }
 section {
   padding: 3rem 10%;
+}
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.pdf-container {
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.essay-summary {
+  max-width: 850px;
+  margin: 3rem auto;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.essay-summary h3 {
+  color: #00ffff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.essay-table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 850px;
+  color: #fff;
+  font-size: 1rem;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.essay-table th, .essay-table td {
+  border: 1px solid #00ffff;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.essay-table th {
+  background-color: #141423;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.essay-table tr:nth-child(even) {
+  background-color: #1a1a26;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #ff004d;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  background: url('images/Digital_culture.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== About Section ===== */
+.about-portfolio {
+  padding: 4rem 10%;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.about-portfolio h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+/* ===== Featured Projects ===== */
+.featured-projects {
+  padding: 3rem 8%;
+  text-align: center;
+}
+
+.featured-projects h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #141423;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Quote Section ===== */
+.quote {
+  background-color: #141423;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  margin-top: 4rem;
 }
