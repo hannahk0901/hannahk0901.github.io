@@ -111,6 +111,16 @@ section {
 .essay-table tr:nth-child(even) {
   background-color: #1a1a26;
 }
+.essay-image img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 700px; /* limits image size */
+  width: 100%;       /* stays responsive on smaller screens */
+  height: auto;      /* preserves aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
 
 .header-image img {
   width: 100%;
@@ -242,4 +252,46 @@ section {
   color: #00ffff;
   box-shadow: 0 0 20px #00ffff;
   margin-top: 4rem;
+}
+
+.stages {
+  text-align: left;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding-left: 1.2rem;
+}
+.stages li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.essay-section {
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.essay-section h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.essay-image img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
