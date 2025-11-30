@@ -295,3 +295,54 @@ section {
   margin-top: 0.5rem;
   font-style: italic;
 }
+
+/* ===== Fancy H2 Styling for All Pages ===== */
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  /* Neon glow */
+  color: #00ffff;
+  text-shadow:
+      0 0 6px #00ffff,
+      0 0 12px #00e6e6,
+      0 0 20px #00cccc;
+
+  /* Add subtle animation */
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Soft glowing pulse animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 6px #00ffff,
+      0 0 12px #00e6e6,
+      0 0 20px #00cccc;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #00ffff,
+      0 0 20px #00e6e6,
+      0 0 35px #00cccc;
+  }
+  100% {
+    text-shadow:
+      0 0 6px #00ffff,
+      0 0 12px #00e6e6,
+      0 0 20px #00cccc;
+  }
+}
+
+/* Make about page paragraphs nicely spaced and readable */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;       /* centers horizontally */
+  text-align: center;   /* centers text */
+  line-height: 1.8;
+  padding: 20px;
+}
